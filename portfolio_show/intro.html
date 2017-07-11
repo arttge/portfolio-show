@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+
+
+
+<html>
+    <body>
+        
+        <script src="processing.js"></script>
+        <canvas data-processing-sources="intro.pde" id="myCanvas"></canvas>
+        
+        <script>
+            
+            var canvas = document.getElementById("myCanvas");
+            
+            var ctx = canvas.getContext('2d');
+            
+        
+                var canvasWidth = canvas.width;
+                var canvasHeight = canvas.height;
+                
+                canvas.width = canvasWidth * 2;
+                canvas.height = canvasHeight * 2;
+                canvas.style.width = canvasWidth;
+                canvas.style.height = canvasHeight;
+                
+                ctx.scale(2, 2);
+            
+        
+        
+            </script>
+        
+    </body>
+</html>
